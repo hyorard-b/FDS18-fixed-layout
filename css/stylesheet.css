@@ -2,11 +2,82 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
 body{
     font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 1.4rem;
+    color: #181818;
+    background: #fff;
 }
+
+
+/* 공통 */
+
+.inner{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* .clearfix::after{
+    content: "";
+    clear: both;
+    display: block; content는 inline요소이기 때문에 clear를 안먹음. clear는 block요소에만 먹는다.
+}*/
+
 
 /* 스킵 네비게이션 */
 .skip-nav{
     display: none;
+}
+
+/* 레이아웃 */
+.header{
+    background: yellow;
+    height: 50px;
+}
+.visual{
+    background: lime;
+    height: 75px;
+}
+.main{
+    background: skyblue;
+    padding: 30px 15px;
+    /* display: flex;
+    justify-content: space-between; */
+    overflow: hidden;
+}
+.inner{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.group{
+    margin: 0 15px;
+}
+.group1{
+    background: tomato;
+    width: 250px;
+    float: left;
+}
+.group2{
+    background: yellowgreen;
+    width: 380px;
+    float: left;
+}
+.group3{
+    background: cyan;
+    width: 190px;
+    float: right;
+}
+.slogan{
+    background: orange;
+    height: 50px;
+}
+.footer{
+    background: pink;
+    height: 50px;
 }
