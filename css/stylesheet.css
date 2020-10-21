@@ -15,7 +15,25 @@ body{
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 1.4rem;
     color: #181818;
-    background: #fff;
+    background: #ccc;
+}
+
+/* 링크 스타일 */
+
+a{
+    color: inherit;
+    text-decoration: none;       
+}
+
+/* 숨김 제목 및 숨김 컨텐츠 */
+.a11y-hidden{
+    background-color: tomato;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0,0 0)
 }
 
 .inner{
@@ -29,13 +47,6 @@ body{
     display: block; content는 inline요소이기 때문에 clear를 안먹음. clear는 block요소에만 먹는다.
 }*/
 
-/* 링크 스타일 */
-
-a{
-    color: inherit;
-    text-decoration: none;       
-}
-
 /* 스타일링 */
 
 /* 스킵 네비게이션 */
@@ -46,7 +57,7 @@ a{
 
 /* 헤더 */
 .header{
-    background: yellow;
+    background: #fff;
     padding: 0 30px;
     position: relative;
     border-radius: 0 0 30px 30px/ 0 0 10px 10px;
@@ -75,9 +86,100 @@ a{
 .member a{
     display: inline-block;
     padding: 6px 0;
-    background-color: pink;
 }
 
+/* 네비게이션 */
+.navigation{
+    padding-bottom: 35px;
+}
+.menu{
+    border-top: 2px solid currentColor;
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    list-style: none;
+    height: 47px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(
+        to bottom,
+        #ed8b2f 0%,
+        #ef4e26 30%,
+        #ef4e26 60%,
+        #ed8b2f 100%);
+    /* display: flex;
+    justify-content: flex-end; */
+    padding-left: 225px;
+}
+.menu-item{
+    float: left;
+    position: relative;
+}
+.menu-button{
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 700;
+    background: transparent;
+    line-height: 45px;
+    display: block;
+    padding: 0 20px;
+    border: 0;
+    border-left: 2px solid rgba(255,255,255,0.5);
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+    /* padding: 13px 20px1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000
+    border-left: 1px solid white;
+    text-shadow: -1px 0 #181818, 0 1px #181818, 1px 0 #181818, 0 -1px #181818; */
+}
+.menu-act .menu-button{
+    color: #ff0;
+}
+.menu-act .menu-button::after{
+    content: "";
+    display: block;
+    border-top: 2px solid #000;
+}
+.sub-menu{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 47px;
+    white-space: nowrap;
+    display: none;
+}
+.menu-act .sub-menu{
+    display: inline-block;
+}
+.sub-menu li,a{
+    display: inline-block;
+}
+/* :not(.menu-act) .sub-menu{
+    display: none;
+} */
+.sub-menu a{
+    padding: 8px 0;
+    margin-right: 10px;
+}
+.sub-menu a::before{
+    content: '\f192';
+    font-family: 'fontello';
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+}
+.sub-menu a:hover::before,
+.sub-menu a:focus::before{
+    content: '\e800';
+}
+.menu-act .sub-menu{
+    display: block;
+}
+.sub-menu1, .sub-menu2, .sub-menu3{
+    left: 0;
+}
+.sub-menu4, .sub-menu5, .sub-menu6{
+    right: 0;
+}
 
 
 .visual{
