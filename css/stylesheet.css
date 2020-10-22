@@ -15,7 +15,7 @@ body{
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 1.4rem;
     color: #181818;
-    background: #ccc;
+    background: #d9d9d9;
 }
 
 /* 링크 스타일 */
@@ -261,7 +261,6 @@ a{
     margin: 0 15px;
 }
 .group1{
-    background: cyan;
     width: 250px;
     float: left;
 }
@@ -269,11 +268,13 @@ a{
     background: linear-gradient(to right, #ef4e26 0%,#ed8b2f 100%);
     border-radius: 5px;
     padding: 10px;
+    box-shadow: 5px 5px #747474;
 }
 .login-heading{
     display: inline-block;
     margin: 5px;
     color: yellow;
+    font-size: 1.5rem;
 }
 .login-form{
     margin-bottom: 0;
@@ -281,6 +282,13 @@ a{
     padding: 5px;
     padding-top: 10px;
     border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+}
+.login-form::after{
+    content:"";
+    display:block;
+    width: 220px;
+    border-top: 1px solid #d9d9d9;
 }
 fieldset{
     padding: 0;
@@ -295,7 +303,7 @@ label{
     display: inline-block;
     width: 55px;
 }
-.login form input{
+.login-form input{
     width: 100px;
 }
 .btn-login{
@@ -315,9 +323,12 @@ label{
     padding: 10px;
     display: flex;
     background: #fff;
-    margin-top: 0;
-    border-top: 1px solid black;
+    margin: 0;
     border-radius: 0 0 5px 5px;
+    font-size: 1.2rem;
+}
+.sign-up{
+    margin-right: 25px;
 }
 
 .icon-right-open{
