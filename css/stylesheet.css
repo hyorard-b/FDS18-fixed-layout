@@ -212,6 +212,7 @@ a{
 .visual{
     height: 120px;
     position: relative;
+    background-image: url(./images/bg_flower.png);
 }
 
 .visual::before, .visual::after{
@@ -247,7 +248,7 @@ a{
     
 }
 .main{
-    background: skyblue;
+    background: white;
     min-height: 450px;
     padding: 30px 15px;
     /* display: flex;
@@ -258,9 +259,32 @@ a{
     margin: 0 15px;
 }
 .group1{
-    background: tomato;
+    background: cyan;
     width: 250px;
     float: left;
+}
+.login{
+    background: tomato;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login-heading{
+    display: inline-block;
+    margin: 5px;
+    color: yellow;
+}
+.login-form{
+    margin-top: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login form input{
+    width: 100px;
+}
+.login .info{
+    padding: 0;
+    display: flex;
 }
 .group2{
     background: yellowgreen;
