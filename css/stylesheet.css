@@ -369,6 +369,36 @@ a{
 .validation-list a:hover{
     color: #f00;
 }
+.term{
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background: #eee;
+    padding: 20px;
+}
+.term-heading{
+    margin: 0;
+}
+.term-container{
+    padding-top: 25px;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+}
+.term-container img{
+    height: 80px;
+}
+.term-text{
+    flex: 0.9;
+}
+.term-word{
+    color: dodgerblue;
+}
+.term-description{
+    display: block;
+    padding-top: 20px;
+}
+
 .slogan{
     background: orange;
 }
