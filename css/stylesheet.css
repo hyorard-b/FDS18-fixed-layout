@@ -346,11 +346,28 @@ a{
     display: block;
     padding: 8px 0;
 }
-.sign-up{
-}
-
 .login-member .icon-right-open{
     color: #ef4e26;
+}
+/* 유효성 검사 배너 */
+.validation{
+}
+.validation-list{
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0 0;
+}
+.validation-list a{
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    background: url('./images/validation_icon.png') no-repeat 25px 50% / 20px 20px,
+    linear-gradient(to bottom, #eee, #ccc);
+    padding: 8px 10px 8px 50px;
+    margin-top: 10px;
+}
+.validation-list a:hover{
+    color: #f00;
 }
 .slogan{
     background: orange;
