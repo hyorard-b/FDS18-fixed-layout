@@ -145,7 +145,7 @@
     <div class="group group1">
       <section class="login">
         <h2 class="login-heading">로그인</h2>
-        <form action="https://formspree.io/seulbinim@gmail.com" class="login-form">
+        <form action="https://formspree.io/seulbinim@gmail.com" method="POST" class="login-form">
           <fieldset>
             <legend class="a11y-hidden">로그인 폼</legend>
             <div class="user-email">
@@ -183,19 +183,22 @@
               W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
             </dd>
           </div>
-          <div>
-            <dt class="term-list-subject">웹 표준 이란?</dt>
-            <dd class="term-list-thumbnail">
-              <img src="images/web_standards.gif" alt="W3C 로고">
-            </dd>
-            <dd class="term-list-brief">
-              W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
-            </dd>
-          </div>
         </dl>
       </section>
     </div>
-    <div class="group group2">group2</div>
+    <div class="group group2">
+      <h2 class="a11y-hidden">검색</h2>
+        <form action="#" class="search-form" action="https://formspree.io/seulbinim@gmail.com" method="POST">
+            <fieldset>
+              <legend>검색 폼</legend>
+              <div class="search-form-container">
+                <label for="search"><span class="icon-search"></span>자료검색</label>
+                <input type="search" name="search" id="search" placeholder="검색어를 입력하세요." required>
+                <button type="submit" class="btn-search">검색</button>
+              </div>
+            </fieldset>
+        </form>
+    </div>
     <div class="group group3">group3</div>
   </main>
   <div class="slogan inner">slogan</div>
