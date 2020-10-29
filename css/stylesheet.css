@@ -644,7 +644,120 @@ a {
 
 
 
+/* 신규 이벤트 및 관련 사이트 */
 
+.gradient-box{
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.gradient-box .event-heading,
+.gradient-box .related-heading{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+.point-color{
+  color: #ed702d;
+}
+.event{
+  position: relative;
+}
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+.event-brief{
+  line-height: 1.5;
+}
+.event-brief em{
+  font-style: normal;
+}
+.btn-event{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-prev, .btn-next{
+  border: 0;
+  padding: 18px 0 0;
+  width: 19px;
+  height: 18px;
+  overflow: hidden;
+  background: transparent url(./images/back_forward.png) 0 0 no-repeat;
+}
+.btn-next{
+  background-position: -36px 0; 
+}
+/* 
+.btn-event{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 55px;
+  height: 20px;
+}
+.btn-event .btn-prev{
+  width: 20px;
+  height: 20px;
+  background: url(./images/back_forward.png) no-repeat;
+  text-indent: 20px;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+}
+.btn-event .btn-next{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url(./images/back_forward.png) no-repeat;
+  background-position: right top;
+  text-indent: 20px;
+  overflow: hidden;
+  margin: 0;
+} */
+.related{
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #aaa;
+}
+.related-list{
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 35px;
+}
+.related-list li{
+  margin-bottom: 5px;
+}
+.related-list li a{
+  display: inline-block;
+  padding: 10px 20px 5px;
+  width: 100%;
+}
+@keyframes siteHover{
+  0%{
+  }
+  25%{
+    height: 70px;
+  }
+  50%{
+    height: 105px;
+  }
+  75%{
+    height: 140px;
+  }
+  100%{
+    height: 175px;
+  }
+}
+.related-list:hover{
+  animation: siteHover 500ms 100ms alternate both linear;
+}
 
 
 
