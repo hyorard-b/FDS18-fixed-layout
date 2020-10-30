@@ -245,6 +245,7 @@ a {
   padding: 30px 15px;
   overflow: hidden;
   min-height: 450px;
+  border-radius: 10px;
 }
 .group {
   margin: 0 15px;
@@ -937,6 +938,7 @@ a {
 .guide-list a{
   display: block;
   padding: 8px 10px;
+  text-transform: uppercase;
 }
 
 /* 주소 및 저작권 */
